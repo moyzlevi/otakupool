@@ -1,0 +1,11 @@
+{{define "title"}} Create Pool {{end}} {{define "main"}}
+<h2>Upload pool</h2>
+<form
+  enctype="multipart/form-data"
+  action="http://localhost:4000/create"
+  method="post"
+>
+  <input type="file" name="uploadedFile" />
+  <input type="submit" value="upload" />
+</form>
+{{end}}

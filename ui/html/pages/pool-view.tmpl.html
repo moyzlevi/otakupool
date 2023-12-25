@@ -1,0 +1,19 @@
+{{define "title"}} Pool #mock {{end}} 
+{{define "main"}}
+{{if .Images}}
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Img</th>
+  </tr>
+  {{range .Images}}
+  <tr>
+    <td>{{.File_name}}</td>
+    <td><img id="ItemPreview" src="data:{{.Mime_type}};base64,{{byteArrayToBase64 .Data}}"></td>
+  </tr>
+  {{end}}
+</table>
+    {{else}}
+    <p>There's nothing to see here yet!</p>
+{{end}}
+{{end}}
