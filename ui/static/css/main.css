@@ -20,3 +20,11 @@ body {
 header, nav, main, footer {
     padding: 2px calc((100% - 800px)/2) 0;
 }
+
+.img-size {
+    height: 100px;
+}
+
+.logo {
+    font-family: 'Oxanium', sans-serif;
+}

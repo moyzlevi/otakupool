@@ -43,5 +43,5 @@ func (app *application) createPost(w http.ResponseWriter, r *http.Request) {
     }
 
 	app.images.Insert(fileBytes, handler.Header.Get("Content-Type"), handler.Filename)
-	http.Redirect(w, r, "/" , http.StatusSeeOther)
+	http.Redirect(w, r, "/pool-view" , http.StatusSeeOther)
 }

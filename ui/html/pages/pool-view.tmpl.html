@@ -9,7 +9,7 @@
   {{range .Images}}
   <tr>
     <td>{{.File_name}}</td>
-    <td><img id="ItemPreview" src="data:{{.Mime_type}};base64,{{byteArrayToBase64 .Data}}"></td>
+    <td><img class="img-size"src="data:{{.Mime_type}};base64,{{byteArrayToBase64 .Data}}"></td>
   </tr>
   {{end}}
 </table>
